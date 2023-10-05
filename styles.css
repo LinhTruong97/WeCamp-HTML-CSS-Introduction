@@ -1,0 +1,369 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Exo", sans-serif;
+  font-size: 15px;
+  color: #777;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* Common element (color, margin, padding) */
+.color-middle-grey {
+  color: #fff;
+  background-color: #616161;
+}
+.color-light-grey {
+  color: #000;
+  background-color: #f1f1f1;
+}
+.color-black {
+  color: #fff;
+  background-color: #000;
+}
+/* HEADER */
+.top-nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.scroll-header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.nav-bar-item {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-bar-item:hover {
+  color: #000;
+  background-color: #ccc;
+}
+.nav-bar-search {
+  position: absolute;
+  right: 0;
+}
+.nav-bar-search:hover {
+  color: #fff;
+  background-color: #f44336;
+}
+/* HOME SECTION */
+#home-section {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-logo {
+  letter-spacing: 5px;
+  padding: 12px 24px;
+  font-size: 20px;
+  text-align: center;
+}
+/* GENERAL SECTION ELEMENT */
+.section-container {
+  padding: 64px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+}
+.section-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.section-subheader {
+  text-align: center;
+}
+/* ABOUT SECTION */
+.about-intro {
+  margin: 15px 0;
+}
+.about-profile {
+  overflow: hidden;
+}
+.about-avatar {
+  width: 50%;
+  padding: 12px 24px;
+  float: left;
+  text-align: center;
+}
+
+.fa-user-large {
+  margin-right: 16px;
+}
+.about-avatar-img {
+  width: 100%;
+  opacity: 0.6;
+  border-radius: 4px;
+}
+.about-avatar-img:hover {
+  opacity: 1;
+}
+.about-description {
+  width: 50%;
+  margin: 15px 0;
+  float: right;
+}
+.about-text {
+  text-align: center;
+  font-size: 18px;
+  margin: 18px 0;
+  padding: 16px 0;
+}
+.about-skill-text {
+  margin: 15px 0;
+  letter-spacing: 10px;
+}
+.about-skill-bar {
+  width: 100%;
+}
+.about-skill-percentage {
+  text-align: center;
+  padding: 4px 8px;
+}
+/* GENERAL INFO */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.info-details {
+  width: 25%;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+/* TRANSITION */
+.portfolio-transition {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+}
+.transition-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.transition-text {
+  color: #fff;
+  letter-spacing: 10px;
+  font-size: 36px;
+  text-align: center;
+}
+/* PORTFOLIO SECTION */
+.portfolio-list {
+  margin: 20px;
+}
+.portfolio-image-list {
+  width: 100%;
+  display: flex;
+}
+.portfolio-item {
+  width: 25%;
+  padding: 8px;
+  cursor: pointer;
+}
+.portfolio-item:hover {
+  opacity: 0.6;
+}
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.load-more-btn {
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.load-more-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/* TRANSITION */
+.contact-transition {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+}
+/* CONTACT SECTION */
+.contact-column {
+  display: flex;
+  margin: 16px 0;
+  padding: 32px 0;
+}
+.contact-image {
+  width: 40%;
+  margin: 16px;
+}
+.contact-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+.contact-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+.contact-details {
+  margin: 8px 0;
+}
+.contact-note {
+  margin: 15px 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.form-half-row {
+  width: 48%;
+}
+.fa-location-dot,
+.fa-phone,
+.fa-envelope {
+  margin-right: 16px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.form-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px 0;
+}
+
+.send-btn {
+  border: none;
+  text-decoration: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.send-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/* FOOTER */
+.footer {
+  opacity: 0.6;
+  padding: 64px 0;
+  text-align: center;
+}
+.footer:hover {
+  opacity: 1;
+}
+.back-to-top-btn {
+  border: none;
+  text-decoration: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.back-to-top-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+.fa-arrow-up {
+  margin-right: 16px;
+}
+.footer-icon-list {
+  margin: 16px 0;
+  font-size: 24px;
+}
+.fa-brands {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.fa-brands:hover {
+  opacity: 0.6;
+}
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-link:hover {
+  color: #4caf50;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-logo-small {
+    display: none;
+  }
+  .about-avatar {
+    width: 100%;
+  }
+  .about-description {
+    width: 100%;
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-details {
+    width: 100%;
+  }
+  .portfolio-image-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-item {
+    width: 50%;
+    padding: 8px;
+  }
+  .contact-column {
+    display: block;
+  }
+  .contact-image {
+    width: 95%;
+  }
+  .contact-info {
+    width: 95%;
+  }
+  .form-row {
+    display: block;
+    margin-bottom: 0;
+  }
+  .form-half-row {
+    width: 100%;
+    margin: 16px 0;
+  }
+}
